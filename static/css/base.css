@@ -1,0 +1,18 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage_background.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(vh100 - 180px);
+    color: #777;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.text-black {
+    color: #000 !important;
+}
