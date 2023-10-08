@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/homepage_background.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(vh100 - 180px);
+    min-height: vh100;
     color: #777;
 }
 
@@ -13,6 +13,29 @@ body {
     text-transform: uppercase;
 }
 
+.shop-button {
+    background: #198754;
+    border-color: #198754;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+.shop-button:hover,
+.shop-button:active,
+.shop-button:focus {
+    background: #fafafa;
+    border-color: #fafafa;
+    color: #198754;
+}
+
 .text-black {
     color: #000 !important;
+}
+
+/* Index.html */
+
+.home-page-background {
+    background-color: #EBF20C;
+    padding: 20px;
+    border-radius: 10px;
 }
