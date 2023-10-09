@@ -2,18 +2,32 @@
 {% load static %}
 
 {% block content %}
+<div class="overlay"></div>
 <div class="container">
     <div class="row">
         {% for product in products %}
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
             <div class="card">
-                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                {% if product.image %}
+                <a href="">
+                    <img src="{{ product.image.url }}" class="card-img-top custom-card-img" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img src="{{ MEDIA_URL }}no-image-icon-23483.png" class="card-img-top custom-card-img"
+                        alt="{{ product.name }}">
+                </a>
+                {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">Category: {{ product.category }}</p>
-                    <p class="card-text">Color: {{ product.color }}</p>
-                    <p class="card-text">Price: ${{ product.price }}</p>
-                    <p class="card-text">Rating: {{ product.rating }}</p>
+                    <p class="card-text m-0">Category: {{ product.category.friendly_name }}</p>
+                    <p class="card-text m-0">Color: {{ product.color }}</p>
+                    <p class="card-text m-0">Price: €{{ product.price }}</p>
+                    {% if product.rating %}
+                    <p class="card-text m-0">Rating: {{ product.rating }}</p>
+                    {% else %}
+                    <p class="card-text m-0">Rating: N/A</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
