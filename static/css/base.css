@@ -30,6 +30,14 @@ body {
     color: #198754;
 }
 
+.bg-off-white {
+    background-color: #fafafa;
+}
+
+.bg-green {
+    background-color: #198754;
+}
+
 .text-black {
     color: #000 !important;
 }
