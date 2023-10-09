@@ -17,7 +17,7 @@ def all_products(request):
 def product_detail(request, product_id):
     """ Render the specific product detail page for the product the user has clicked """
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Flowers, pk=product_id)
 
     context = {
         'product': product,

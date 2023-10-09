@@ -58,6 +58,11 @@ body {
     object-fit: cover;
 }
 
+.detail-image-size {
+    max-height: 500px;
+    object-fit: ;
+}
+
 /* Index.html */
 
 .home-page-background {
