@@ -16,27 +16,24 @@
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="flowerseeds-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Flower Seeds
+                Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="flowerseeds-link">
-                <a href="" class="dropdown-item">Shrubs</a>
-                <a href="" class="dropdown-item">Container Plants</a>
-                <a href="" class="dropdown-item">Herbaceous Perennials</a>
-                <a href="" class="dropdown-item">Cacti & Succulents</a>
+                <a href="{% url 'products' %}?category=shrubs" class="dropdown-item">Shrubs</a>
+                <a href="{% url 'products' %}?category=container_plants" class="dropdown-item">Container Plants</a>
+                <a href="{% url 'products' %}?category=herbaceous_perennials" class="dropdown-item">Herbaceous
+                    Perennials</a>
+                <a href="{% url 'products' %}?category=cacti_succulents" class="dropdown-item">Cacti & Succulents</a>
+                <a href="{% url 'products' %}?category=shrubs,container_plants,herbaceous_perennials,cacti_succulents"
+                    class="dropdown-item">All Categories</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=on_sale"
+                id="specials-link">
                 On Sale
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
-            </div>
         </li>
     </ul>
 </div>
