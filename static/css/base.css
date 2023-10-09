@@ -87,6 +87,29 @@ body {
     color: #fafafa !important;
 }
 
+.btt-button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-color: #000 !important;
+    background-color: #fafafa;
+}
+
+.btt-link {
+    cursor: pointer;
+    color: #198754;
+    font-size: 2rem;
+}
+
+.btt-button:hover,
+.btt-link:hover {
+    background-color: #198754;
+    color: #fafafa;
+    border-radius: 5px;
+}
+
 /* Index.html */
 
 .home-page-background {
