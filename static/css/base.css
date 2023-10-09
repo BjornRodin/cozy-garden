@@ -80,9 +80,11 @@ body {
 
 /* Media queries */
 @media (max-width: 770px) {
-    .margin-top-media-queries {
+    .margin-top-bottom-media-queries {
         margin-top: 10px;
+        margin-bottom: 100px;
     }
+
 }
 
 @media (max-width: 620px) {
