@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="row mt-4">
-        <div class="col-md-6 detail-image-size">
+        <div class="col-md-6 detail-image-size border-radius max-width-90vw">
             {% if product.image %}
             <a href="{{ product.image.url }}" target="_blank">
                 <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}">
@@ -21,7 +21,7 @@
             </a>
             {% endif %}
         </div>
-        <div class="col-md-6 bg-white rounded-5">
+        <div class="col-md-6 bg-white border-radius margin-top-media-queries max-width-90vw">
             <h3 class="mt-4">{{ product.name }}</h3>
             <p><strong>Category:</strong> {{ product.category.friendly_name }}</p>
             <p><strong>Color:</strong> {{ product.color }}</p>
