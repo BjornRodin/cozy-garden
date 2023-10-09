@@ -72,3 +72,23 @@ body {
 }
 
 /* Media queries */
+@media (max-width: 620px) {
+    .free-delivery {
+        font-size: 1rem;
+    }
+
+    .navbar-media-sizes {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .free-delivery {
+        font-size: 0.8rem;
+    }
+
+    .navbar-media-sizes {
+        font-size: 0.6rem;
+        padding: 4px;
+    }
+}
