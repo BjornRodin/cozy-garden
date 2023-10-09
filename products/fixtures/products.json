@@ -1,0 +1,423 @@
+[{
+        "model": "products.flowers",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "sku": "SHR1",
+            "price": 15.99,
+            "instructions": "Large double. Good grower, heavy bloomer. Early to mid-season, acid loving plants. Plant in moist well drained soil with pH of 4.0-5.5.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Azalea_en_flor.jpg/1024px-Azalea_en_flor.jpg",
+            "name": "Azalea",
+            "rating": 4.7,
+            "image": "Azalea-flower.jpg",
+            "color": "Pink"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 2,
+        "fields": {
+            "category": "1",
+            "sku": "SHR2",
+            "price": 33.99,
+            "instructions": "Beautiful large royal purple flowers adorn attractive satiny green leaves that turn orange\\/red in cold weather. Grows to up to 18 feet, or prune annually to shorten.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Tibouchina_semidecandra_%282%29.jpg/1024px-Tibouchina_semidecandra_%282%29.jpg",
+            "name": "Tibouchina Semidecandra",
+            "rating": 3.7,
+            "image": "Tibouchina_semidecandra.jpg",
+            "color": "Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 3,
+        "fields": {
+            "category": "SHR3",
+            "price": 12.99,
+            "instructions": "Blooms in summer, 20-35 inches high. Fertilize regularly for best results. Full sun, drought tolerant.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Yellow_Hibiscus_%28Hibiscus%29.jpg/1024px-Yellow_Hibiscus_%28Hibiscus%29.jpg",
+            "name": "Yellow Hibiscus",
+            "rating": 3.9,
+            "image": "Yellow-hibiscus.jpg",
+            "color": "Yellow"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 4,
+        "fields": {
+            "category": "SHR4",
+            "price": 5.99,
+            "instructions": "Quick-growing, herbaceous, shrub reaching up to 30 inches in height, forming a rounded, dense bush.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Plectranthus_fruticans0.jpg",
+            "name": "Plectranthus",
+            "rating": 4.9,
+            "image": "Plectranthus.jpg",
+            "color": "Light-Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 5,
+        "fields": {
+            "category": "SHR5",
+            "price": 15.99,
+            "instructions": "Slow growing, upright to spreading shrub. Oval, glossy, leaves and profuse winter to spring blooming flowers.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Camellia_japonica_NBG.jpg/1024px-Camellia_japonica_NBG.jpg",
+            "name": "Camellia Japonica",
+            "rating": 4.4,
+            "image": "Camellia-japonica.jpg",
+            "color": "Pink"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 6,
+        "fields": {
+            "category": "SHR6",
+            "price": 10.99,
+            "instructions": "Thorny woody vine scrambles over other plants with their hooked thorns. Pest free.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Starr_030418-0058_Bougainvillea_spectabilis.jpg/1024px-Starr_030418-0058_Bougainvillea_spectabilis.jpg",
+            "name": "Bougainvillea Spectabilis",
+            "rating": 4.6,
+            "image": "Bougainvillea-spectabilis.jpg",
+            "color": "Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 7,
+        "fields": {
+            "category": "SHR7",
+            "price": 22.99,
+            "instructions": "Deep purple colored flowers bushy rounded growth habit to 3 feet tall. Plant in full sun. Water regularly.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Rosa_Burgundy_Iceberg_5zz.jpg/512px-Rosa_Burgundy_Iceberg_5zz.jpg",
+            "name": "Rosa Burgundy",
+            "rating": 4.2,
+            "image": "Rosa-burgundy.jpg",
+            "color": "Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 8,
+        "fields": {
+            "category": "SHR8",
+            "price": 22.99,
+            "instructions": "Deep purple colored flowers bushy rounded growth habit to 3 feet tall. Plant in full sun. Water regularly.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Rosa_Iceberg_1.jpg/1024px-Rosa_Iceberg_1.jpg",
+            "name": "Rosa Iceberg",
+            "rating": 4.8,
+            "image": "Rosa_Iceberg.jpg",
+            "color": "White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 9,
+        "fields": {
+            "category": "CP1",
+            "price": 45.99,
+            "instructions": "They do not thrive indoors, where the light is too dim, and humidity too low, for them to grow properly.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Bonsai_Tree_5.jpg/1024px-Bonsai_Tree_5.jpg",
+            "name": "Bonsai Tree",
+            "rating": 3.8,
+            "image": "Bonsai_Tree.jpg",
+            "color": "Green"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 10,
+        "fields": {
+            "category": "CP2",
+            "price": 12.99,
+            "instructions": "Blooms continuously from early spring to first frost. Full sun or part shade, moist well-drained soil.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Calibrachoa_Noa_Amber_Star_2zz.jpg/1024px-Calibrachoa_Noa_Amber_Star_2zz.jpg",
+            "name": "Calibrachoa Noa Amber Star",
+            "rating": 4.1,
+            "image": "Calibrachoa_Noa_Amber_Star.jpg",
+            "color": "Amber"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 11,
+        "fields": {
+            "category": "CP3",
+            "price": 14.99,
+            "instructions": "The flowers last about ten weeks. They have a waxy texture and reach a height of more than 20 inches.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Cymbidium_insigne_5zz.jpg/1024px-Cymbidium_insigne_5zz.jpg",
+            "name": "Cymbidium Insigne",
+            "rating": 3.3,
+            "image": "Cymbidium_insigne.jpg",
+            "color": "White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 12,
+        "fields": {
+            "category": "CP4",
+            "price": 4.99,
+            "instructions": "Creamy-white centers, medium green outer foliage with flattened outer foliage.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Brassica_oleracea_var._gongylodes_%28kohlrabi%29.jpg/1024px-Brassica_oleracea_var._gongylodes_%28kohlrabi%29.jpg",
+            "name": "Brassica Oleracea",
+            "rating": 2.8,
+            "image": "Brassica_oleracea.jpg",
+            "color": "Green"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 13,
+        "fields": {
+            "category": "CP5",
+            "price": 4.99,
+            "instructions": "Compact mounds of colorful dainty flowers, good for window boxes. Fertile well drained soil.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Viola_cornuta_Penny_Orange_Jump_Up_2zz.jpg/1024px-Viola_cornuta_Penny_Orange_Jump_Up_2zz.jpg",
+            "name": "Viola Cornuta Penny Orange Jump Up",
+            "rating": 3.8,
+            "image": "Viola_cornuta_Penny_Orange_Jump_Up.jpg",
+            "color": "Yellow-Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 14,
+        "fields": {
+            "category": "CP6",
+            "price": 5.99,
+            "instructions": "Cotula have very fragrant orange flowers that bloom in the middle of summer.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Cotula_coronopifolia._C%C3%B3tula.jpg/1024px-Cotula_coronopifolia._C%C3%B3tula.jpg",
+            "name": "Cotula",
+            "rating": 2.8,
+            "image": "Cotula.jpg",
+            "color": "Yellow-Orange"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 15,
+        "fields": {
+            "category": "CP7",
+            "price": 4.99,
+            "instructions": "Well drained neutral to slightly acid soil, bright light. Do not over-fertilize or these flowers will lose scent.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Pelargonium_peltatum_9191s.jpg/1024px-Pelargonium_peltatum_9191s.jpg",
+            "name": "Pelargonium Peltatum",
+            "rating": 3.5,
+            "image": "Pelargonium_peltatum.jpg",
+            "color": "Pink-White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 16,
+        "fields": {
+            "category": "CP8",
+            "price": 3.99,
+            "instructions": "Compact mounds of colorful dainty flowers, good for window boxes. Fertile well drained soil.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Viola_tricolor-flower-yercaud-salem-India.JPG/1024px-Viola_tricolor-flower-yercaud-salem-India.JPG",
+            "name": "Viola Tricolor Flower",
+            "rating": 3.9,
+            "image": "Viola_tricolor-flower.jpg",
+            "color": "Purple-White-Yellow"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 17,
+        "fields": {
+            "category": "CP9",
+            "price": 3.99,
+            "instructions": "Compact mounds of colorful dainty flowers, good for window boxes. Fertile well drained soil.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Viola_x_wittrockiana_Colossus_Yellow_with_Blotch_2zz.jpg/1024px-Viola_x_wittrockiana_Colossus_Yellow_with_Blotch_2zz.jpg",
+            "name": "Viola Yellow with Blotch",
+            "rating": 4.1,
+            "image": "Viola_Yellow_with_Blotch.jpg",
+            "color": "Yellow"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 18,
+        "fields": {
+            "category": "CP10",
+            "price": 25.99,
+            "instructions": "Choose the brightest windows in your house for your orchids, place on an humidity tray and spray regularly.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Phalaenopsis_purple_cultivar_2.jpg/1024px-Phalaenopsis_purple_cultivar_2.jpg",
+            "name": "Phalaenopsis Purple",
+            "rating": 4.6,
+            "image": "Phalaenopsis_purple.jpg",
+            "color": "Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 19,
+        "fields": {
+            "category": "HP1",
+            "price": 5.99,
+            "instructions": "They thrive in fertile, fast draining, slightly alkaline (pH 6.75) soil. Avoid overwatering.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Dianthus_hyssopifolius_1.jpg/1024px-Dianthus_hyssopifolius_1.jpg",
+            "name": "Dianthus",
+            "rating": 4.2,
+            "image": "Dianthus_hyssopifolius.jpg",
+            "color": "Light-Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 20,
+        "fields": {
+            "category": "HP2",
+            "price": 9.99,
+            "instructions": "Chrysanthemums respond to plenty of food and moisture, and prefer full sun.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Chrysanthemum_morifolium_08NOV.jpg/1024px-Chrysanthemum_morifolium_08NOV.jpg",
+            "name": "Chrysanthemum",
+            "rating": 4.8,
+            "image": "Chrysanthemum_morifolium.jpg",
+            "color": "Pink-White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 21,
+        "fields": {
+            "category": "HP3",
+            "price": 7.99,
+            "instructions": "Summer flowering, 12-18” high, likes full sun and well drained soil. Drought tolerant.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Armeria_alliacea_a2.jpg/512px-Armeria_alliacea_a2.jpg",
+            "name": "Armeria Alliacea",
+            "rating": 4.6,
+            "image": "Armeria_alliacea.jpg",
+            "color": "Pink-White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 22,
+        "fields": {
+            "category": "HP4",
+            "price": 6.99,
+            "instructions": "Grows to 15 inches. The species is easy to grow from seeds or cuttings. This species prefers full sun.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Salvia_splendens_%28scarlet_sage%29_1_%2849081380101%29.jpg/1024px-Salvia_splendens_%28scarlet_sage%29_1_%2849081380101%29.jpg",
+            "name": "Salvia Splendens",
+            "rating": 3.6,
+            "image": "Salvia_splendens.jpg",
+            "color": "Red"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 23,
+        "fields": {
+            "category": "HP5",
+            "price": 8.99,
+            "instructions": "Easily grown, tolerant of drought and poor soil, flower and foliage improves with feeding. Full sun.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Agapanthus_flowers.jpg/512px-Agapanthus_flowers.jpg",
+            "name": "Agapanthus",
+            "rating": 3.8,
+            "image": "Agapanthus_flowers.jpg",
+            "color": "Blue-White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 24,
+        "fields": {
+            "category": "HP6",
+            "price": 5.99,
+            "instructions": "These plants are very hardy, easy to grow, and increase readily. Average flower size is 3-4 inches in diameter.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Siberian_Iris_Iris_sibirica_Flower_2500px.jpg/1024px-Siberian_Iris_Iris_sibirica_Flower_2500px.jpg",
+            "name": "Iris Sibirica",
+            "rating": 2.6,
+            "image": "Siberian_Iris_Iris_sibirica_Flower.jpg",
+            "color": "Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 25,
+        "fields": {
+            "category": "HP7",
+            "price": 9.99,
+            "instructions": "Chrysanthemums grow best and produce the most flowers if they are planted in full sunshine.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Chrysanthemum_094557.jpg/1024px-Chrysanthemum_094557.jpg",
+            "name": "Chrysanthemum",
+            "rating": 3.9,
+            "image": "Chrysanthemum.jpg",
+            "color": "Purple"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 26,
+        "fields": {
+            "category": "HP8",
+            "price": 10.99,
+            "instructions": "Grown primarily for its attractive silvergray foliage rather than its yellow flowers. Drought tolerant.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Jacobaea_maritima_syn._Senecio_cineraria_Starzec_popielny_2021-09-03_01.jpg/1024px-Jacobaea_maritima_syn._Senecio_cineraria_Starzec_popielny_2021-09-03_01.jpg",
+            "name": "Senecio Cineraria",
+            "rating": 2.9,
+            "image": "Senecio_cineraria.jpg",
+            "color": "Green-White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 27,
+        "fields": {
+            "category": "CS1",
+            "price": 18.99,
+            "instructions": "Add water until there is half inch of dry soil on the surface. Do not water again until the soil is completely dry.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Eilat_Botanical_garden_-_red_cactus.jpg/1024px-Eilat_Botanical_garden_-_red_cactus.jpg",
+            "name": "Red Cactus",
+            "rating": 3.4,
+            "image": "red_cactus.jpg",
+            "color": "Green-White"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 28,
+        "fields": {
+            "category": "CS2",
+            "price": 30.99,
+            "instructions": "Drought tolerant, well drained soil. Prefers full sun.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aerial_view_of_aloe_vera_plant.jpg/1024px-Aerial_view_of_aloe_vera_plant.jpg",
+            "name": "Aloe Vera",
+            "rating": 4.4,
+            "image": "aloe_vera.jpg",
+            "color": "Green"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 29,
+        "fields": {
+            "category": "CS3",
+            "price": 20.99,
+            "instructions": "Easy to care for, requiring watering only when they're dry. They like bright but indirect light.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Schlumbergera_D081111.jpg/1024px-Schlumbergera_D081111.jpg",
+            "name": "Schlumbergera",
+            "rating": 4.1,
+            "image": "Schlumbergera.jpg",
+            "color": "Pink"
+        }
+    },
+    {
+        "model": "products.flowers",
+        "pk": 30,
+        "fields": {
+            "category": "CS4",
+            "price": 12.99,
+            "instructions": "These plants blend in among the stones as a means of protection. Grazing animals would otherwise eat them.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Lithops_lesliei_ssp._lesliei_v._mariae_Cole_141_05.jpg/1024px-Lithops_lesliei_ssp._lesliei_v._mariae_Cole_141_05.jpg",
+            "name": "Lithops",
+            "rating": 3.1,
+            "image": "Lithops_lesliei.jpg",
+            "color": "Pink"
+        }
+    }
+]
