@@ -3,6 +3,10 @@ from django.db import models
 
 class Category(models.Model):
     """ Model to handle the categories """
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=150)
     friendly_name = models.CharField(max_length=150, null=True, blank=True)
 
@@ -15,6 +19,10 @@ class Category(models.Model):
 
 class Flowers(models.Model):
     """ Model to handle the products """
+
+    class Meta:
+        verbose_name_plural = 'Flowers'
+
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=25, null=True, blank=True)
     name = models.CharField(max_length=150)
