@@ -23,7 +23,13 @@
         </div>
         <div class="col-md-6 bg-white border-radius margin-top-bottom-media-queries max-width-90vw">
             <h3 class="mt-4">{{ product.name }}</h3>
-            <p><strong>Category:</strong> {{ product.category.friendly_name }}</p>
+            {% if product.category %}
+            <p>
+                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                    <strong>Category:</strong> {{ product.category.friendly_name }}
+                </a>
+            </p>
+            {% endif %}
             <p><strong>Color:</strong> {{ product.color }}</p>
             <p><strong>Price:</strong> €{{ product.price }}</p>
             <p><strong>Instructions:</strong> {{ product.instructions }}</p>
