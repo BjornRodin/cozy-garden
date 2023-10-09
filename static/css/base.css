@@ -70,6 +70,10 @@ body {
     border-radius: 5px;
 }
 
+.margin-bottom-product {
+    margin-bottom: 200px;
+}
+
 /* Index.html */
 
 .home-page-background {
