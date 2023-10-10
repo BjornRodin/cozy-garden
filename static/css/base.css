@@ -106,6 +106,26 @@ body {
     color: #fafafa !important;
 }
 
+.btn-red {
+    background: red;
+    color: #fafafa;
+}
+
+.btn-green {
+    background: #198754;
+    color: #fafafa;
+}
+
+.btn-green:hover {
+    background: darkgreen;
+    color: #fafafa;
+}
+
+.btn-red:hover {
+    background: darkred;
+    color: #fafafa;
+}
+
 .btt-button {
     height: 50px;
     width: 50px;
