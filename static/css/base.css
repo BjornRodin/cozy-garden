@@ -136,6 +136,11 @@ body {
     background-color: #fafafa;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 .btt-link {
     cursor: pointer;
     color: #198754;
