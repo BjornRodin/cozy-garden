@@ -17,7 +17,7 @@
             </a>
             {% else %}
             <a href="">
-                <img src="{{ MEDIA_URL }}no-image-icon-23483.png" class="img-fluid" alt="{{ product.name }}">
+                <img src="{{ MEDIA_URL }}noimage.png" class="img-fluid" alt="{{ product.name }}">
             </a>
             {% endif %}
         </div>
@@ -38,7 +38,7 @@
             {% else %}
             <p><strong>Rating:</strong> N/A</p>
             {% endif %}
-            <form class="form" action="" method="POST">
+            <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
                     <div class="col-12">
