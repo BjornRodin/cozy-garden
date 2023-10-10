@@ -15,10 +15,18 @@ body {
     text-transform: uppercase;
 }
 
-.shop-button {
+.shop-button,
+.keep-shop-button:hover {
     background: #198754;
     border-color: #198754;
     color: #fafafa;
+    text-transform: uppercase;
+}
+
+.keep-shop-button {
+    background: #EBF20C;
+    border-color: #EBF20C;
+    color: #198754;
     text-transform: uppercase;
 }
 
