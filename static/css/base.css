@@ -259,6 +259,12 @@ body {
     .margin-top-media-queries {
         margin-top: 20px;
     }
+
+    .shop-button,
+    .keep-shop-button,
+    .font-size-queries {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 350px) {
@@ -269,5 +275,10 @@ body {
     .navbar-media-sizes {
         font-size: 0.6rem;
         padding: 4px;
+    }
+
+    .shop-button,
+    .keep-shop-button {
+        font-size: 0.7rem;
     }
 }
