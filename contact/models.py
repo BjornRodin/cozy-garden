@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class ContactForm(models.Model):
+class ContactModel(models.Model):
     """ Model for contact form """
     class Meta:
         verbose_name = 'Contact'
