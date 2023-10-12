@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="overlay-white"></div>
+<div class="container mb-4 min-vh-100">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo-font mt-4 mb-4 text-center text-black">My Profile</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
