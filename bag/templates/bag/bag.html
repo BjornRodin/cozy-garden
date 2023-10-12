@@ -30,7 +30,13 @@
                         <tr>
                             <td>
                                 <div class="d-flex">
-                                    <img class="img-fluid" src="{{ item.product.image.url }}" alt="">
+                                    {% if item.product.image %}
+                                    <img class="img-fluid" src="{{ item.product.image_url }}"
+                                        alt="{{ item.product.name }}">
+                                    {% else %}
+                                    <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                        alt="{{ item.product.name }}">
+                                    {% endif %}
                                 </div>
                             </td>
                             <td class="py-3">
