@@ -73,7 +73,7 @@ def product_detail(request, product_id):
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
-        message.error(request, 'You are not Admin and cannot \
+        messages.error(request, 'You are not Admin and cannot \
             perform this action.')
         return redirect(reverse('home'))
 
@@ -132,7 +132,7 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
-        message.error(request, 'You are not Admin and cannot \
+        messages.error(request, 'You are not Admin and cannot \
             perform this action.')
         return redirect(reverse('home'))
 
