@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="text-center home-page-background">
+        <h1 class="display-5 logo-font text-black">Ooops!</h1>
+        <p class="lead text-black">The page you are looking for is not available</p>
+        <hr>
+        <p class="text-black">To return, please click the button below
+        </p>
+        <a href="{% url 'products' %}" class="btn btn-primary btn-lg mt-4 shop-button">Return</a>
+    </div>
+</div>
+{% endblock %}
