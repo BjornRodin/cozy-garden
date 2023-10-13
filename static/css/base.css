@@ -253,6 +253,10 @@ body {
     border-color: #dc3545;
 }
 
+.hr-color {
+    border-color: #000 !important;
+}
+
 /* Media queries */
 @media (max-width: 770px) {
     .margin-top-bottom-media-queries {
