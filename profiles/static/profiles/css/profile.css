@@ -3,6 +3,11 @@
     overflow-y: auto;
 }
 
+.custom-horizontal-border-table tr,
+.custom-horizontal-border-table th {
+    border-bottom: 2px solid #000 !important;
+}
+
 #profile-update-form .form-control {
     color: #000;
 }
@@ -18,4 +23,11 @@
 
 #id_default_country option:first-child {
     color: #aab7c4;
+}
+
+/* Media queries */
+@media (max-width: 580px) {
+    .order-history {
+        font-size: 0.6rem;
+    }
 }
