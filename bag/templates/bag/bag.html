@@ -27,7 +27,7 @@
             <p class="my-0 small">SKU: {{ item.product.sku|upper }}</p>
         </div>
         <div class="col-md-6">
-            <p class="my-0 text-black float-right">@ €{{ item.product.price }} each</p>
+            <p class="my-0 text-black float-right">@ €{{ item.product.price }} per pack</p>
             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                 {% csrf_token %}
                 <div class="form-group">
