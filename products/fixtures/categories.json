@@ -26,4 +26,11 @@
         "name": "cacti_&_succulents",
         "friendly_name": "Cacti & Succulents"
     }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "new",
+        "friendly_name": "New"
+    }
 }]

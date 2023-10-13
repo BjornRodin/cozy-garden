@@ -3,7 +3,8 @@ from .models import Contact
 
 
 class ContactFormAdmin(admin.ModelAdmin):
-    
+    """ Adjusting fields in admin panel """
+
     list_display = [
         'email',
         'subject',

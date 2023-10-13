@@ -17,7 +17,7 @@
         "model": "products.flowers",
         "pk": 2,
         "fields": {
-            "category": 1,
+            "category": 5,
             "sku": "SHR2",
             "price": 33.99,
             "instructions": "Beautiful large royal purple flowers adorn attractive satiny green leaves that turn orange\\/red in cold weather. Grows to up to 18 feet, or prune annually to shorten.",
@@ -92,7 +92,7 @@
         "model": "products.flowers",
         "pk": 7,
         "fields": {
-            "category": 1,
+            "category": 5,
             "sku": "SHR7",
             "price": 22.99,
             "instructions": "Deep purple colored flowers bushy rounded growth habit to 3 feet tall. Plant in full sun. Water regularly.",
@@ -182,7 +182,7 @@
         "model": "products.flowers",
         "pk": 13,
         "fields": {
-            "category": 2,
+            "category": 5,
             "sku": "CP5",
             "price": 4.99,
             "instructions": "Compact mounds of colorful dainty flowers, good for window boxes. Fertile well drained soil.",
@@ -242,7 +242,7 @@
         "model": "products.flowers",
         "pk": 17,
         "fields": {
-            "category": 2,
+            "category": 5,
             "sku": "CP9",
             "price": 3.99,
             "instructions": "Compact mounds of colorful dainty flowers, good for window boxes. Fertile well drained soil.",
@@ -302,7 +302,7 @@
         "model": "products.flowers",
         "pk": 21,
         "fields": {
-            "category": 3,
+            "category": 5,
             "sku": "HP3",
             "price": 7.99,
             "instructions": "Summer flowering, 12-18” high, likes full sun and well drained soil. Drought tolerant.",
@@ -347,7 +347,7 @@
         "model": "products.flowers",
         "pk": 24,
         "fields": {
-            "category": 3,
+            "category": 5,
             "sku": "HP6",
             "price": 5.99,
             "instructions": "These plants are very hardy, easy to grow, and increase readily. Average flower size is 3-4 inches in diameter.",
@@ -422,7 +422,7 @@
         "model": "products.flowers",
         "pk": 29,
         "fields": {
-            "category": 4,
+            "category": 5,
             "sku": "CS3",
             "price": 20.99,
             "instructions": "Easy to care for, requiring watering only when they're dry. They like bright but indirect light.",
