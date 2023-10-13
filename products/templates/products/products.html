@@ -56,7 +56,7 @@
     <div class="row margin-bottom-product">
         {% for product in products %}
         <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
-            <div class="card">
+            <div class="card bg-off-white">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
                     <img src="{{ product.image.url }}" class="card-img-top custom-card-img" alt="{{ product.name }}">
@@ -66,11 +66,11 @@
                     <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top custom-card-img" alt="{{ product.name }}">
                 </a>
                 {% endif %}
-                <div class="card-body">
+                <div class="card-body text-black">
                     <h5 class="card-title">{{ product.name }}</h5>
                     {% if product.category %}
                     <p class="card-text m-0">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
                             Category: {{ product.category.friendly_name }}
                         </a>
                     </p>
@@ -84,7 +84,7 @@
                     {% endif %}
                     {% if request.user.is_superuser %}
                     <small>
-                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                        <a href="{% url 'edit_product' product.id %}">Edit</a> or
                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                     </small>
                     {% endif %}

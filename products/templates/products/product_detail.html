@@ -21,22 +21,23 @@
             </a>
             {% endif %}
         </div>
-        <div class="col-md-6 bg-white border-radius margin-top-bottom-media-queries max-width-90vw font-size-queries">
-            <h3 class="mt-4">{{ product.name }}</h3>
+        <div
+            class="col-md-6 bg-off-white border-radius margin-top-bottom-media-queries max-width-90vw font-size-queries">
+            <h3 class="mt-4 text-black">{{ product.name }}</h3>
             {% if product.category %}
-            <p>
-                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+            <p class="mb-1">
+                <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
                     <strong>Category:</strong> {{ product.category.friendly_name }}
                 </a>
             </p>
             {% endif %}
-            <p><strong>Color:</strong> {{ product.color }}</p>
-            <p><strong>Price:</strong> €{{ product.price }}</p>
-            <p><strong>Instructions:</strong> {{ product.instructions }}</p>
+            <p class="text-black mb-1"><strong>Color:</strong> {{ product.color }}</p>
+            <p class="text-black mb-1"><strong>Price:</strong> €{{ product.price }}</p>
+            <p class="text-black mb-1"><strong>Instructions:</strong> {{ product.instructions }}</p>
             {% if product.rating %}
-            <p><strong>Rating:</strong> {{ product.rating }}</p>
+            <p class="text-black mb-1"><strong>Rating:</strong> {{ product.rating }}</p>
             {% else %}
-            <p><strong>Rating:</strong> N/A</p>
+            <p class="text-black mb-1"><strong>Rating:</strong> N/A</p>
             {% endif %}
             {% if request.user.is_superuser %}
             <small>
@@ -48,7 +49,7 @@
                 {% csrf_token %}
                 <div class="form-row">
                     <div class="col-12">
-                        <p class="mt-2"><strong>Quantity:</strong></p>
+                        <p class="mt-2 text-black"><strong>Quantity:</strong></p>
                         <div class="form-group w-50">
                             <div class="input-group">
                                 <div class="input-group-prepend">

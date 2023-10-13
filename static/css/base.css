@@ -78,9 +78,8 @@ body {
 }
 
 .detail-image-size {
-    max-height: 500px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #fafafa;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -291,6 +290,10 @@ body {
     .font-size-queries {
         font-size: 0.8rem;
     }
+
+    .w-50 {
+        width: 80% !important;
+    }
 }
 
 @media (max-width: 350px) {
@@ -299,7 +302,7 @@ body {
     }
 
     .navbar-media-sizes {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         padding: 4px;
     }
 
