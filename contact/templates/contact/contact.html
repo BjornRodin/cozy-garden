@@ -13,11 +13,11 @@
     </div>
     <div class="row">
         <div class="col">
-            <form action="" method="POST" class="form mb-2">
+            <form action="{% url 'contact' %}" method="POST" class="form mb-2">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-right">
-                    <a class="btn btn-primary mt-4 mb-3 keep-shop-button" href="">Home</a>
+                    <a class="btn btn-primary mt-4 mb-3 keep-shop-button" href="{% url 'home' %}">Home</a>
                     <button type="submit" class="btn btn-primary mt-4 mb-3 shop-button">Submit</button>
                 </div>
             </form>

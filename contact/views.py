@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 from .forms import ContactForm
 
 
@@ -10,7 +11,8 @@ def contact_us(request):
         if form.is_valid():
             form.save()
             return render(request, 'contact/contact_success.html')
-    form = ContactForm()
+    else:
+        form = ContactForm()
     context = {
         'form': form
     }
