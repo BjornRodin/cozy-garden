@@ -292,6 +292,10 @@ body {
 }
 
 @media (max-width: 580px) {
+    .h2-font-queries {
+        font-size: 1.5rem !important;
+    }
+
     .max-width-90vw {
         max-width: 90vw;
         margin: 0 auto;
