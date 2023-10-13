@@ -8,7 +8,10 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ Showing all flowers, and will include sorting and search queries later """
+    """
+    Showing all flowers, and include sorting
+    and search queries
+    """
 
     products = Flowers.objects.all()
     query = None
@@ -42,7 +45,8 @@ def all_products(request):
                 messages.error(request, "You need to enter a search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(instructions__icontains=query) | Q(color__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                instructions__icontains=query) | Q(color__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -58,7 +62,10 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ Render the specific product detail page for the product the user has clicked """
+    """
+    Render the specific product detail page for the
+    product the user has clicked
+    """
 
     product = get_object_or_404(Flowers, pk=product_id)
 
@@ -82,13 +89,15 @@ def add_product(request):
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(
+                reverse('product_detail', args=[product.id]))
         else:
             messages.error(
-                request, 'Failed to add product. Please ensure the form is valid.')
+                request, 'Failed to add product.\
+                    Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -101,7 +110,7 @@ def add_product(request):
 def edit_product(request, product_id):
     """ Edit a product in the store """
     if not request.user.is_superuser:
-        message.error(request, 'You are not Admin and cannot \
+        messages.error(request, 'You are not Admin and cannot \
             perform this action.')
         return redirect(reverse('home'))
 
@@ -139,4 +148,4 @@ def delete_product(request, product_id):
     product = get_object_or_404(Flowers, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return redirect(reverse('products')) 
+    return redirect(reverse('products'))

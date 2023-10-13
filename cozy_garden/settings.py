@@ -27,7 +27,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['cozy-gardenbrm-e89d3ea43ad4.herokuapp.com', '8000-bjornrodin-cozygarden-ilswcbi2jzz.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['cozy-gardenbrm-e89d3ea43ad4.herokuapp.com',
+                 '8000-bjornrodin-cozygarden-ilswcbi2jzz.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -81,7 +82,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # Required by allauth
+                'django.template.context_processors.request',  # Required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -121,12 +122,12 @@ WSGI_APPLICATION = 'cozy_garden.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {

@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -68,14 +69,16 @@ def checkout(request):
                         order_line_item.save()
                 except Flowers.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't found in the database. "
+                        "One of the products in your cart \
+                        wasn't found in the database. "
                         "Please contact us for assistance!")
                         )
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                            args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -166,4 +169,3 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
-    

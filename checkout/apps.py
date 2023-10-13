@@ -6,4 +6,8 @@ class CheckoutConfig(AppConfig):
     name = 'checkout'
 
     def ready(self):
+        """
+        Overrides ready method and imports signals
+        module to update totals
+        """
         import checkout.signals
