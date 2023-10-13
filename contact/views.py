@@ -1,9 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .forms import ContactForm
 
 
 def contact_us(request):
     """ Renders the contact page """
-
+    form = ContactForm()
+    context = {
+        'form': form
+    }
     
-    return HttpResponse("Contact app works!")
+    return render(request, 'contact/contact.html', context)
