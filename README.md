@@ -12,6 +12,9 @@ This is a website where anyone can visit to buy their flower seeds to plant at h
 
 ## Table of Content
 - [Introduction](#introduction)
+- [E-Commerce](#e-commerce)
+    - [Social Media](#social-media)
+    - [Newsletter](#newsletter)
 - [User Experience (UX)](#user-experience-ux)
     - [Introduction](#introduction-1)
     - [User Stories](#user-stories)
@@ -80,6 +83,23 @@ This is a website where anyone can visit to buy their flower seeds to plant at h
 - [Acknowledgements](#acknowledgements)
 
 
+## E-Commerce Model
+Cozy Garden is a platform that are selling premium products to any customer. Our focus is on B2C but anyone is welcome to order our products. Our vision is to provide anyone, regardless of location, with good quality flower seeds to make their garden (or other outdoor spaces) into an oasis to be in. We value high reliability, quick deliveries and competitive prices in all our ranges. Our aim is to always improve, adding new products as we go along and listen to our customers. By following our journey on [Facebook](https://www.facebook.com/profile.php?id=61552288920638) and subscribing to our newsletter our customer can always expect to have the most up-to-date information, deals and more. We are the simple way for anyone to have a high-end outdoor space.
+
+### Social Media
+This is our marketing page on [Facebook](https://www.facebook.com/profile.php?id=61552288920638). Having a social media connection means we can get in contact with many more potential customers and also increase the traffic to our website. Below is images of the page if the link is not working.
+
+![Facebookpic1](static/documentation/readme-images/facebook-pic-1.PNG)
+
+![Facebookpic2](static/documentation/readme-images/facebook-pic-2.PNG)
+
+### Newsletter
+As mentioned we have a Newsletter anyone can subscribe to when they are visiting our website. This Newsletter would be used to give our subscribers special deals, 'early-bird' information about new products coming in and more. For those who prefer email over social media, this is a good way of getting the information they want.
+
+The newsletter subscription is visible in the footer, see below.
+
+![footer](static/documentation/readme-images/footer.PNG)
+
 ## User Experience (UX)
 
 ### Introduction
@@ -147,11 +167,11 @@ Below is the wireframes:
 ## Features
 
 ### Existing Features
-- Nav-bar when logged out & when logged in
+- Nav-bar when logged out & when logged in (only admins can see the Manage Products)
     
     ![nav-bar](static/documentation/readme-images/nav-bar.PNG)
     ![nav-bar-login](static/documentation/readme-images/nav-bar-login.PNG)
-- Book a session button on home page
+- Productpage
 
     ![productpage](static/documentation/readme-images/productpage.PNG)
 - Sign up form
@@ -378,8 +398,11 @@ The responsiveness of the website was tested with google chromes devtools and wa
 I can't find any responsive design issues on any of the pages. The images are, in order: Desktop, Nest Hub, Galaxy S8 and another to show the dropdown meny for navbar on smaller screensizes.
 
 ![Desktop-responsive](static/documentation/readme-images/desktopresponsive.PNG)
+
 ![Nest-responsive](static/documentation/readme-images/responsivenesthub.PNG)
+
 ![Mobilebooking-responsive](static/documentation/readme-images/responsivemobile.PNG)
+
 ![Mobilenavbar-responsive](static/documentation/readme-images/responsivembnavbar.PNG)
 
 ## Bugs
