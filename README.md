@@ -222,6 +222,7 @@ Below is the wireframes:
 - Have more images for each type of flower to give the user a better understanding on how it looks more than the actual flower itself.
 - Give the users more sorting variables, for example where they could choose which type of soil they have at home and we recommend which plants would be the best. 
 - Having more products than flower seeds, could have additional items that would be needed when planting these seeds. Soil, tools and so on.
+- I was planning on adding a function for the user to add favorites. Due to time constraint I wasn't able to finish it and therefor I left it for future development. The idea was that logged in users could mark products as favorites if they ever would like to find products they really like much quicker, especially if the shop eventually has 100s of products.
 
 ## Testing
 
@@ -391,7 +392,9 @@ The tests are all made in the same way:
 #### Feature Test
 Tested according to below image and passing everything.
 
-![feature-testing](static/documentation/readme-images/feature-test.PNG)
+![manualtest1](static/documentation/readme-images/manualtest1.PNG)
+
+![manualtest2](static/documentation/readme-images/manualtest2.PNG)
 
 #### Responsiveness
 The responsiveness of the website was tested with google chromes devtools and was tested with all devices available there. Below is a few images from different sizes.

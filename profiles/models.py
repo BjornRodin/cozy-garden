@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from products.models import Flowers
 
 from django_countries.fields import CountryField
 
@@ -38,3 +39,14 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # For existing users, saves the profile
     instance.userprofile.save()
+
+
+class FavoriteList(models.Model):
+    """ Model for a users favorites """
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    products = models.ManyToManyField(Flowers, blank=True)
+
+    @property
+    def qty_favorite_items(self):
+        return self.products.count()

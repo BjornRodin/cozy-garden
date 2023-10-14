@@ -1,9 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
-
+from products.models import Flowers
 from checkout.models import Order
 
 
@@ -33,6 +33,22 @@ def profile(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def add_favorite(request, product_id):
+    """ Add product to favorites """
+    product = get_object_or_404(Flowers, id=product_id)
+    favorite_list, created = FavoriteList.objects.get_or_create(user=request.user)
+
+    if product not in favorite_list.products.all():
+        favorite_list.products.add(product)
+        messages.success(request, f'{product.name} added to favorites!')
+    else:
+        messages.info(request, f'{product.name} is already a favorite.')
+
+    return redirect('product_detail', product_id=product_id)
+
 
 
 @login_required
