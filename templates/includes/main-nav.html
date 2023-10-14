@@ -10,7 +10,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Flowers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 bg-off-white" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -24,7 +24,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Category
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="flowerseeds-link">
+            <div class="dropdown-menu border-0 bg-off-white" aria-labelledby="flowerseeds-link">
                 <a href="{% url 'products' %}?category=shrubs" class="dropdown-item">Shrubs</a>
                 <a href="{% url 'products' %}?category=container_plants" class="dropdown-item">Container Plants</a>
                 <a href="{% url 'products' %}?category=herbaceous_perennials" class="dropdown-item">Herbaceous
