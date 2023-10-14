@@ -14,6 +14,33 @@
             <hr>
         </div>
     </div>
+    {% if favoritelist.products.all %}
+    {% for product in favoritelist.products.all %}
+    <div class="row">
+        <div class="col-md-4 mb-1">
+            <a href="{% url 'product_detail' product.id %}">
+                {% if product.image %}
+                <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% else %}
+                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                {% endif %}
+            </a>
+        </div>
+        <div class="col-md-5 text-left">
+            <p class="my-0 text-black"><strong>{{ product.name }}</strong></p>
+            <p class="my-0 text-black"><strong>Instructions:</strong></p>
+            <p class="my-0 text-black">{{ product.instructions }}</p>
+        </div>
+        <div class="col-md-3">
+            <p class="my-0 text-black">SKU: <strong>{{ product.sku|upper }}</strong></p>
+            <p class="my-0 text-black">Price: <strong>€{{ product.price }}</strong></p>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p class="logo-font font-weight-bold text-black">You have no favorites yet!</p>
+    <hr>
+    {% endif %}
     <div class="row">
         <div class="col-12">
             <p class="logo-font font-weight-bold text-black">Your Saved Delivery Details</p>
