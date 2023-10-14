@@ -15,6 +15,7 @@
         </div>
     </div>
     {% if favoritelist.products.all %}
+    <p class="logo-font font-weight-bold text-black">Your list of favorites</p>
     {% for product in favoritelist.products.all %}
     <div class="row">
         <div class="col-md-4 mb-1">
@@ -34,8 +35,10 @@
         <div class="col-md-3">
             <p class="my-0 text-black">SKU: <strong>{{ product.sku|upper }}</strong></p>
             <p class="my-0 text-black">Price: <strong>€{{ product.price }}</strong></p>
+            <a href="{% url 'add_favorite' product.id %}" class="text-danger">Remove from list</a>
         </div>
     </div>
+    <hr>
     {% endfor %}
     {% else %}
     <p class="logo-font font-weight-bold text-black">You have no favorites yet!</p>
@@ -43,7 +46,7 @@
     {% endif %}
     <div class="row">
         <div class="col-12">
-            <p class="logo-font font-weight-bold text-black">Your Saved Delivery Details</p>
+            <p class="logo-font font-weight-bold text-black mt-4">Your Saved Delivery Details</p>
             <form class="mt-2" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}

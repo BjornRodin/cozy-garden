@@ -184,6 +184,13 @@ Below is the wireframes:
 
     ![profile](static/documentation/readme-images/profile.PNG)
     ![previousorder](static/documentation/readme-images/previousorder.PNG)
+
+- When logged in the user can see the "Add to favorites" in the product details. With this they can add the item to a list which is visible in on the profile page.
+
+![addtofavorites](static/documentation/readme-images/addtofavorites.PNG)
+
+![favoritelist](static/documentation/readme-images/favoritelist.PNG)
+
 - Any user can view the contact page and a form can be seen and submitted with relevant information.
 
     ![contactform](static/documentation/readme-images/contactform.PNG)
@@ -222,7 +229,6 @@ Below is the wireframes:
 - Have more images for each type of flower to give the user a better understanding on how it looks more than the actual flower itself.
 - Give the users more sorting variables, for example where they could choose which type of soil they have at home and we recommend which plants would be the best. 
 - Having more products than flower seeds, could have additional items that would be needed when planting these seeds. Soil, tools and so on.
-- I was planning on adding a function for the user to add favorites. Due to time constraint I wasn't able to finish it and therefor I left it for future development. The idea was that logged in users could mark products as favorites if they ever would like to find products they really like much quicker, especially if the shop eventually has 100s of products.
 
 ## Testing
 

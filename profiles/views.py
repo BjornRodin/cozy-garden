@@ -65,10 +65,12 @@ def add_favorite(request, product_id):
     product = get_object_or_404(Flowers, id=product_id)
     favoritelist, created = FavoriteList.objects.get_or_create(user=request.user)
 
-    if product not in favoritelist.products.all():
+    if product in favoritelist.products.all():
+        favoritelist.products.remove(product)
+        messages.success(request, f'{product.name} was removed from favorites.')
+    else:
         favoritelist.products.add(product)
         messages.success(request, f'{product.name} added to favorites!')
-    else:
-        messages.info(request, f'{product.name} is already a favorite.')
 
     return redirect('product_detail', product_id=product_id)
+    
