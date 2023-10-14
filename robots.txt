@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /profiles/
+Disallow: /checkout/
+Disallow: /admin/
+Disallow: /bag/
+Sitemap: https://cozy-gardenbrm-e89d3ea43ad4.herokuapp.com/sitemap.xml
