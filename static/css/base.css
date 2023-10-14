@@ -273,6 +273,11 @@ body {
     border-color: #000 !important;
 }
 
+#mc_embed_signup {
+    background: #fafafa;
+    border-radius: 5px;
+}
+
 /* Media queries */
 @media (max-width: 770px) {
     .margin-top-bottom-media-queries {
