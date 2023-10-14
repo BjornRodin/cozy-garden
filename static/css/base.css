@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/homepage_background.png') no-repeat center center fixed;
     background-size: cover;
-    min-height: vh100;
+    min-height: 100vh;
     color: #777;
     font-family: 'Roboto',
         sans-serif;
@@ -30,14 +30,14 @@ body {
 .shop-button,
 .keep-shop-button:hover {
     background: #198754;
-    border-color: #198754;
+    border: 0;
     color: #fafafa;
     text-transform: uppercase;
 }
 
 .keep-shop-button {
     background: #EBF20C;
-    border-color: #EBF20C;
+    border: 0;
     color: #198754;
     text-transform: uppercase;
 }
@@ -46,7 +46,7 @@ body {
 .shop-button:active,
 .shop-button:focus {
     background: #EBF20C;
-    border-color: #EBF20C;
+    border: 0;
     color: #198754;
 }
 
