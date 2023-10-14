@@ -238,7 +238,15 @@
 
     {% block postloadjs %}
     <script>
-        $('.toast').toast('show');
+        $(document).ready(function () {
+            // Show toasts
+            $('.toast').toast('show');
+
+            // Setting a timeout
+            setTimeout(function () {
+                $('.toast').toast('hide');
+            }, 5000);
+        });
     </script>
     <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
     </script>
