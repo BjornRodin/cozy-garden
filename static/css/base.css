@@ -19,6 +19,10 @@ body {
     width: 1.5rem;
 }
 
+.socials:hover {
+    color: #EBF20C !important;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
