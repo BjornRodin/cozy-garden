@@ -48,7 +48,7 @@ class FavoriteList(models.Model):
     products = models.ManyToManyField(Flowers, blank=True)
 
     @property
-    def qty_favorite_items(self):
+    def num_products(self):
         return self.products.count()
 
     class Meta:
