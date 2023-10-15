@@ -50,3 +50,7 @@ class FavoriteList(models.Model):
     @property
     def qty_favorite_items(self):
         return self.products.count()
+
+    class Meta:
+        # Specify the custom table name
+        db_table = 'profiles_favoritelist'
