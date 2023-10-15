@@ -421,6 +421,7 @@ The bugs that I encountered are all mostly visible in the [Project Board](https:
 
 I will definitely take with me is that using the Project Board is an amazing tool to keep track of the items that are being worked on and any history related to that development. In future projects and when going into the field of working as a programmer I will be spending as much time as possible organizing this page to not only keep my work updated, but also be able in detail to show anyone else what has been done and when it was implemented.
 
+To build the favorites app I had help from this youtube video [Favorite Feature](https://www.youtube.com/watch?v=H4QPHLmsZMU&t=795s) but then built my own thing. The video helped me get started and was informative which helped in the development of my own funtionality.
 One major bug that was realized at deployment was that I had forgot to migrate my changes to ElephantSQL and for some reason I had missed to set some environment variables aswell. After loads of researching (before I realized that this was the issue) I got in contact with a Tutor that helped me. After some guidance of making the migrations correctly before pushing to heroku we finally got it to work as it is intended. Now the favoritelist works as I wanted and i'm happy with the results.
 
 
