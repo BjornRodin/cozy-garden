@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+if os.path.exists("env.py"):
+    import env 
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['cozy-gardenbrm-e89d3ea43ad4.herokuapp.com',
                  '8000-bjornrodin-cozygarden-ilswcbi2jzz.ws-eu105.gitpod.io']
@@ -129,6 +131,7 @@ WSGI_APPLICATION = 'cozy_garden.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 # }
+
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
