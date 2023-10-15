@@ -46,7 +46,8 @@
             </small>
             {% elif request.user.is_authenticated %}
             <p>
-                <a class="text-success font-weight-bold" href="">Add to Favorites <i class="fa-regular fa-star"></i></a>
+                <a class="text-success font-weight-bold" href="{% url 'add_favorite' product.id %}">Add to Favorites <i
+                        class="fa-regular fa-star"></i></a>
             </p>
             {% endif %}
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
