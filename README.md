@@ -419,7 +419,9 @@ I can't find any responsive design issues on any of the pages. The images are, i
 ## Bugs
 The bugs that I encountered are all mostly visible in the [Project Board](https://github.com/users/BjornRodin/projects/7). I say 'mostly' because not all the minor bugs is reported there but instead reported in a commit message in the repository. What i've tried to do is to atleast mention the major bugs and discussing them before finding the solution and mentioning those aswell of course. In any case, below is a list of bugs that was encountered and how they was solved.
 
-I will definitely take with me is that using the Project Board is an amazing tool to keep track of the items that are being worked on and any history related to that development. In future projects and when going into the field of working as a programmer I will be spending as much time as possible organizing this page to not only keep my work updated, but also be able in detail to show anyone else what has been done and when it was implemented. 
+I will definitely take with me is that using the Project Board is an amazing tool to keep track of the items that are being worked on and any history related to that development. In future projects and when going into the field of working as a programmer I will be spending as much time as possible organizing this page to not only keep my work updated, but also be able in detail to show anyone else what has been done and when it was implemented.
+
+One major bug that was realized at deployment was that I had forgot to migrate my changes to ElephantSQL and for some reason I had missed to set some environment variables aswell. After loads of researching (before I realized that this was the issue) I got in contact with a Tutor that helped me. After some guidance of making the migrations correctly before pushing to heroku we finally got it to work as it is intended. Now the favoritelist works as I wanted and i'm happy with the results.
 
 
 ## Technologies
@@ -780,4 +782,5 @@ After this you can add your changes, commit, and then push.
 
 ## Acknowledgements
 - Thank you to my family, especially Joakim Rödin, who have supported, pushed and encouraged me during the project.
+- The Tutor team.
 - The Slack community.

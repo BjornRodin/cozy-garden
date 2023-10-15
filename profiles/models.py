@@ -35,7 +35,8 @@ class UserProfile(models.Model):
 class FavoriteList(models.Model):
     """ Model for a users favorites """
 
-    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, blank=True, null=True)
     products = models.ManyToManyField(Flowers, blank=True)
 
     @property
@@ -55,4 +56,3 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # For existing users, saves the profile
     instance.userprofile.save()
-

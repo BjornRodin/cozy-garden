@@ -63,14 +63,15 @@ def order_history(request, order_number):
 def add_favorite(request, product_id):
     """ Add product to favorites """
     product = get_object_or_404(Flowers, id=product_id)
-    favoritelist, created = FavoriteList.objects.get_or_create(user=request.user)
+    favoritelist, created = FavoriteList.objects.get_or_create(
+        user=request.user)
 
     if product in favoritelist.products.all():
         favoritelist.products.remove(product)
-        messages.success(request, f'{product.name} was removed from favorites.')
+        messages.success(
+            request, f'{product.name} was removed from favorites.')
     else:
         favoritelist.products.add(product)
         messages.success(request, f'{product.name} added to favorites!')
 
     return redirect('product_detail', product_id=product_id)
-    

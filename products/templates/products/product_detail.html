@@ -44,10 +44,15 @@
                 <a href="{% url 'edit_product' product.id %}">Edit</a> or
                 <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
             </small>
+            <hr>
+            <p>
+                <a class="text-success font-weight-bold" href="{% url 'add_favorite' product.id %}"
+                    data-product-id="{{ product.id }}">Add to Favorites <i class="fa-regular fa-star"></i></a>
+            </p>
             {% elif request.user.is_authenticated %}
             <p>
-                <a class="text-success font-weight-bold" href="{% url 'add_favorite' product.id %}">Add to Favorites <i
-                        class="fa-regular fa-star"></i></a>
+                <a class="text-success font-weight-bold" href="{% url 'add_favorite' product.id %}"
+                    data-product-id="{{ product.id }}">Add to Favorites <i class="fa-regular fa-star"></i></a>
             </p>
             {% endif %}
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
