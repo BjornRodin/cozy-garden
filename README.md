@@ -221,7 +221,9 @@ Below is the wireframes:
 - When a admin want to add a product, they can do that aswell from their product management page which is only visible for admins, not regular logged in users. They can also edit an existing product in the same way. If they want to they can also delete products, either directly from the products page or in product details.
 
     ![addproduct](static/documentation/readme-images/addproduct.PNG)
+
     ![editproduct](static/documentation/readme-images/editproduct.PNG)
+    
     ![deleteproduct](static/documentation/readme-images/deleteproduct.PNG)
 
 ### Future Features
