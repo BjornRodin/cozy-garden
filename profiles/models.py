@@ -32,15 +32,6 @@ class UserProfile(models.Model):
         return self.user.username
 
 
-@receiver(post_save, sender=User)
-def create_or_update_user_profile(sender, instance, created, **kwargs):
-    """ Creates or updates user profile """
-    if created:
-        UserProfile.objects.create(user=instance)
-    # For existing users, saves the profile
-    instance.userprofile.save()
-
-
 class FavoriteList(models.Model):
     """ Model for a users favorites """
 
@@ -50,4 +41,18 @@ class FavoriteList(models.Model):
     @property
     def num_products(self):
         return self.products.count()
+
+    # Trying to set database table name
+    # class Meta:
+        # Specify the custom table name
+    #    db_table = 'profiles_favoritelist'
+
+
+@receiver(post_save, sender=User)
+def create_or_update_user_profile(sender, instance, created, **kwargs):
+    """ Creates or updates user profile """
+    if created:
+        UserProfile.objects.create(user=instance)
+    # For existing users, saves the profile
+    instance.userprofile.save()
 
